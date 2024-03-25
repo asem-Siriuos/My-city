@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>My city</title>
+	<meta name="desciption" content="It facilitates the address for the user">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+
+
+
+		function ss() {
+			var s = document.getElementById('sea');
+			console.log("Fg");
+			if (s.value === "رجال المع") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485370.0017772036!2d41.74267716318943!3d18.119955116094808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e371cd2aae68cb%3A0xc0981a34b4abdae7!2sRijal%20Almaa%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1711050183159!5m2!1sen!2s";
+			}
+
+			else if (s.value === "الجرف") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60621.4084093745!2d42.18137664368159!3d18.26324536278777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e35dea105ffe5b%3A0x212b573d9b8f8328!2sAl%20Jarf%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710626391749!5m2!1sen!2s";
+			}
+			else if (s.value === "البتيلة") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30323.035871797387!2d42.24919048767406!3d18.192477022461546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e342d0fe5223d7%3A0xfa639024eba9d29b!2sAl%20Batilah%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710629152779!5m2!1sen!2s";
+			} else if (s.value === "حسوة") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15166.222017033935!2d42.306804580627485!3d18.138306567684037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e34478254e8c0d%3A0x831984ad7e501ee1!2sHiswah%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710627538282!5m2!1sen!2s";
+
+			} else if (s.value === "الحبيل") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60683.609057506306!2d42.18449452911451!3d18.084254972460418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e36a8e1bc5811b%3A0x69c8671f96fc8d0a!2sHabeel%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710627374803!5m2!1sen!2s";
+			}
+
+			else if (s.value === "جزعة الثلوث") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30317.13179920961!2d42.13679352700746!3d18.226392132640218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e3661953169419%3A0x3a8dde02a648693f!2sJazzat%20Al%20Thlooth%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710877179094!5m2!1sen!2s";
+			}
+			else if (s.value === "وسانب") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15148.087478045889!2d42.230629830716744!3d18.34628669059941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e35fe678c2609b%3A0x2bca40465c9f31b2!2sWosanib%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710877421803!5m2!1sen!2s";
+			}
+			else if (s.value === "عرمرم") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30381.45649852842!2d42.01379978709735!3d17.85353321872443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e303b32c546fd3%3A0x7d7c7cb158816597!2sAramram%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710878539913!5m2!1sen!2s";
+			}
+			else if (s.value === "الحريضة") {
+				var h = document.getElementById('map');
+				h.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30392.99427843194!2d41.91294868698372!3d17.785855087792644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e2ff73f3f65eb3%3A0xd36bcc364250b41a!2sAl%20Haridhah%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710878318422!5m2!1sen!2s";
+			}
+			else if (s.value === "الشعبين") {
+				var h = document.getElementById('map');
+				h.src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15158.098547094682!2d42.2995091659225!3d18.231755824903132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e35c5896077505%3A0x1a812bad9a3e9631!2z2KfZhNi02LnYqNmK2YYgNjM0NTTYjCDYp9mE2LPYudmI2K_Zitip!5e0!3m2!1sar!2sus!4v1711329291146!5m2!1sar!2sus" ;
+			}
+
+		}
+
+	</script>
+</head>
+<header id="header">
+	<nav dir="ltr">
+		<div class="logo">My city</div>
+		<center>
+			<ul>
+				<li><a href="./Mqall.html">Comments</a></li>
+				<li><a href="./Contact.html">Contact</a></li>
+				<li><a href="./Team.html">our Team</a></li>
+				<li><a class="active" href="./index.html">Home</a></li>
+			</ul>
+		</center>
+	</nav>
+	</div>
+</header>
+
+<body>
+	<center>
+		<div class="banner">
+			<img src="images/creator/banner.jpg" alt="Banner">
+		</div>
+	</center>
+	<div class="srch">
+
+		<div class="srchtirale"> <h1 >Search here</h1></div>
+		<input dir="ltr" id="sea" type="text" class="search" placeholder="search" onkeyup="ss()"><img
+			src="images/icon/search.png" alt="search" onclick=slide()>
+			
+	</div>
+
+	<div class="mapss">
+		<div class="slider-container">
+			<div class="g3">
+				<h1 align="center">Latest articles</h1>
+				<hr style="border: solid; color: #db4437; width: 100%;  height: 0px ;" /></br>
+				<table dir="ltr" id="ta">
+					<tr>
+						<th>
+							<h4 align="left" style="font-size: 16px; color: #db4437;">Discover Landmarks in Your
+								Neighborhood</h4>
+							<p align="left" style="font-size: 13px;">Our site allows users to search for neighborhood
+								names and get a list of all the landmarks in that area....</p>
+						</th>
+						<th><img src="images/creator/1b.jpg" width="200px" height="120px" /></th>
+					</tr>
+					<tr>
+						<th>
+							<h4 align="left" style="font-size: 16px; color: #db4437;">Find the perfect neighborhood</h4>
+							<p align="left" style="font-size: 13px;">Our website provides a simple and quick interface
+								to search for neighborhoods and discover important landmarks in that area,....</p>
+						</th>
+						<th><img src="images/creator/2b.jpg" width="200px" height="120px" /></th>
+					</tr>
+					<tr>
+						<th>
+							<h4 align="left" style="font-size: 16px; color: #db4437;">Explore your surroundings with
+								location</h4>
+							<p align="left" style="font-size: 13px;">You can use our site to explore nearby areas and
+								get information about schools, hospitals, restaurants, parks and more....</p>
+						</th>
+						<th><img src="images/creator/3b.jpg" width="200px" height="120px" /></th>
+					</tr>
+					<tr>
+						<th>
+							<h4 align="left" style="font-size: 16px; color: #db4437;">Make your daily life easier with
+								our search website</h4>
+							<p align="left" style="font-size: 13px;">Use our site to save time and effort searching for
+								important landmarks in your neighborhood, such as schools and hospitals....</p>
+						</th>
+						<th><img src="images/creator/4b.jpg" width="200px" height="120px" /></th>
+					</tr>
+
+
+
+				</table>
+			</div>
+			<iframe id="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d485370.0017772036!2d41.74267716318943!3d18.1199551160948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e371cd2aae68cb%3A0xc0981a34b4abdae7!2sRijal%20Almaa%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1710540934509!5m2!1sen!2s"
+				width="1100" height="600" style="border:0;" allowfullscreen="100px" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+		</div>
+	</div>
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“We are pleased to have you with us, and we welcome your comments and suggestions to improve the site, and we appreciate your contribution to making it better. thanks for your visit".
+
+		</div></marquee>
+	<footer>
+		<div class="footerContainer">
+			<div class="socialIcons">
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-google-plus"></i></a>
+				<a href="#"><i class="fa-brands fa-youtube"></i></a>
+			</div>
+			<div class="footerNav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">our Team</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footerBottom">
+			<p>Copyright &copy;2024 Created By <span class="designer">The Leaders</span></p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
